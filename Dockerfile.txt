@@ -1,9 +1,0 @@
-FROM php:8.0-apache
-
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
-
-COPY . /var/www/html/
-
-WORKDIR /var/www/html/vb2.php
-
-EXPOSE 80/tcp 
